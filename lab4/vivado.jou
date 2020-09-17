@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jun 20 14:12:29 2020
+# Process ID: 8000
+# Current directory: E:/lab/lab4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15632 E:\lab\lab4\lab4.xpr
+# Log file: E:/lab/lab4/vivado.log
+# Journal file: E:/lab/lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/lab/lab4/lab4.xpr
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.Coe_File {E:/lab/lab4/mipstest_lab4.coe}] [get_ips inst_mem]

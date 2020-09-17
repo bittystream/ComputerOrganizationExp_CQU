@@ -1,0 +1,370 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6244 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 725.449 ; gain = 177.918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/lab/lab2/lab2.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [E:/lab/lab2/lab2.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [E:/lab/lab2/lab2.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display' [E:/lab/lab2/lab2.srcs/sources_1/imports/new/display.v:23]
+INFO: [Synth 8-226] default block is never used [E:/lab/lab2/lab2.srcs/sources_1/imports/new/display.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'display' (2#1) [E:/lab/lab2/lab2.srcs/sources_1/imports/new/display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [E:/lab/lab2/lab2.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (3#1) [E:/lab/lab2/lab2.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'inst_rom' [E:/lab/lab2/lab2.runs/synth_1/.Xil/Vivado-9032-DESKTOP-2CVRPCT/realtime/inst_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'inst_rom' (4#1) [E:/lab/lab2/lab2.runs/synth_1/.Xil/Vivado-9032-DESKTOP-2CVRPCT/realtime/inst_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'controller' [E:/lab/lab2/lab2.srcs/sources_1/new/controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'main_decoder' [E:/lab/lab2/lab2.srcs/sources_1/new/main_decoder.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'main_decoder' (5#1) [E:/lab/lab2/lab2.srcs/sources_1/new/main_decoder.v:29]
+INFO: [Synth 8-6157] synthesizing module 'alu_decoder' [E:/lab/lab2/lab2.srcs/sources_1/new/alu_decoder.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'alu_decoder' (6#1) [E:/lab/lab2/lab2.srcs/sources_1/new/alu_decoder.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (7#1) [E:/lab/lab2/lab2.srcs/sources_1/new/controller.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (8#1) [E:/lab/lab2/lab2.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 791.781 ; gain = 244.250
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 791.781 ; gain = 244.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 791.781 ; gain = 244.250
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/lab/lab2/lab2.srcs/sources_1/ip/inst_rom/inst_rom/inst_rom_in_context.xdc] for cell 'rom'
+Finished Parsing XDC File [e:/lab/lab2/lab2.srcs/sources_1/ip/inst_rom/inst_rom/inst_rom_in_context.xdc] for cell 'rom'
+Parsing XDC File [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'inst[31]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'inst[30]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'inst[29]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'inst[28]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'inst[27]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'inst[26]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'inst[25]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'inst[24]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'inst[23]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'inst[22]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'inst[21]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'inst[20]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'inst[19]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'inst[18]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'inst[17]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'inst[16]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'inst[15]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'inst[14]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'inst[13]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'inst[12]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'inst[11]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'inst[10]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'inst[9]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'inst[8]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'inst[7]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'inst[6]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'inst[5]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'inst[4]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'inst[3]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'inst[2]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'inst[1]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'inst[0]'. [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc:68]
+Finished Parsing XDC File [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/lab/lab2/lab2.srcs/constrs_1/imports/new/alu_constraints_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 908.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 908.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 908.145 ; gain = 360.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 908.145 ; gain = 360.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for rom. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 908.145 ; gain = 360.613
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 908.145 ; gain = 360.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   6 Input      9 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_div 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+Module main_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      9 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+Module alu_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\progcnt/pc_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\progcnt/pc_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 908.145 ; gain = 360.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 908.145 ; gain = 360.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 908.145 ; gain = 360.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 910.449 ; gain = 362.918
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 916.246 ; gain = 368.715
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 916.246 ; gain = 368.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 916.246 ; gain = 368.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 916.246 ; gain = 368.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 916.246 ; gain = 368.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 916.246 ; gain = 368.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |inst_rom      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |inst_rom |     1|
+|2     |BUFG     |     2|
+|3     |CARRY4   |    24|
+|4     |LUT1     |     4|
+|5     |LUT2     |    48|
+|6     |LUT3     |    10|
+|7     |LUT4     |    16|
+|8     |LUT5     |    11|
+|9     |LUT6     |    41|
+|10    |FDRE     |    87|
+|11    |IBUF     |     2|
+|12    |OBUF     |    28|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------+--------+------+
+|      |Instance  |Module  |Cells |
++------+----------+--------+------+
+|1     |top       |        |   305|
+|2     |  cd      |clk_div |    40|
+|3     |  dp      |display |   144|
+|4     |  progcnt |PC      |    39|
++------+----------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 916.246 ; gain = 368.715
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 916.246 ; gain = 252.352
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 916.246 ; gain = 368.715
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 932.234 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 932.234 ; gain = 634.797
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 932.234 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/lab/lab2/lab2.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 22 01:40:40 2020...

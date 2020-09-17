@@ -1,0 +1,274 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Jun 28 16:38:44 2020
+# Process ID: 14936
+# Current directory: E:/lab/lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18272 E:\lab\lab2\lab2.xpr
+# Log file: E:/lab/lab2/vivado.log
+# Journal file: E:/lab/lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/lab/lab2/lab2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 682.301 ; gain = 95.684
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/lab/lab2/mipstest.coe' provided. It will be converted relative to IP Instance files '../../../../mipstest.coe'
+set_property -dict [list CONFIG.Write_Depth_A {256} CONFIG.Coe_File {E:/lab/lab2/mipstest.coe}] [get_ips inst_rom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/lab/lab2/mipstest.coe' provided. It will be converted relative to IP Instance files '../../../../mipstest.coe'
+generate_target all [get_files  E:/lab/lab2/lab2.srcs/sources_1/ip/inst_rom/inst_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'inst_rom'...
+catch { config_ip_cache -export [get_ips -all inst_rom] }
+export_ip_user_files -of_objects [get_files E:/lab/lab2/lab2.srcs/sources_1/ip/inst_rom/inst_rom.xci] -no_script -sync -force -quiet
+reset_run inst_rom_synth_1
+launch_runs -jobs 4 inst_rom_synth_1
+[Sun Jun 28 16:41:25 2020] Launched inst_rom_synth_1...
+Run output will be captured here: E:/lab/lab2/lab2.runs/inst_rom_synth_1/runme.log
+export_simulation -of_objects [get_files E:/lab/lab2/lab2.srcs/sources_1/ip/inst_rom/inst_rom.xci] -directory E:/lab/lab2/lab2.ip_user_files/sim_scripts -ip_user_files_dir E:/lab/lab2/lab2.ip_user_files -ipstatic_source_dir E:/lab/lab2/lab2.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/lab/lab2/lab2.cache/compile_simlib/modelsim} {questa=E:/lab/lab2/lab2.cache/compile_simlib/questa} {riviera=E:/lab/lab2/lab2.cache/compile_simlib/riviera} {activehdl=E:/lab/lab2/lab2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files E:/lab/lab2/lab2.srcs/sources_1/inst_ram.coe] -no_script -reset -force -quiet
+remove_files  E:/lab/lab2/lab2.srcs/sources_1/inst_ram.coe
+file delete -force E:/lab/lab2/lab2.srcs/sources_1/inst_ram.coe
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/lab/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ctrl_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/lab/lab2/lab2.sim/sim_1/behav/xsim/inst_rom.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab/lab2/lab2.sim/sim_1/behav/xsim/mipstest.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/lab/lab2/lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ctrl_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab/lab2/lab2.srcs/sources_1/ip/inst_rom/sim/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab/lab2/lab2.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab/lab2/lab2.srcs/sources_1/new/alu_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab/lab2/lab2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab/lab2/lab2.srcs/sources_1/new/main_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab/lab2/lab2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab/lab2/lab2.srcs/sim_1/new/ctrl_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl_sim
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/lab/lab2/lab2.sim/sim_1/behav/xsim'
+"xelab -wto 5b8b06e4e327436ea082dc549439247a --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ctrl_sim_behav xil_defaultlib.ctrl_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 5b8b06e4e327436ea082dc549439247a --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ctrl_sim_behav xil_defaultlib.ctrl_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.alu_decoder
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.ctrl_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ctrl_sim_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source E:/lab/lab2/lab2.sim/sim_1/behav/xsim/xsim.dir/ctrl_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'E:/lab/lab2/lab2.sim/sim_1/behav/xsim/xsim.dir/ctrl_sim_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Jun 28 16:42:16 2020. For additional details about this file, please refer to the WebTalk help file at E:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun 28 16:42:16 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 752.879 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/lab/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ctrl_sim_behav -key {Behavioral:sim_1:Functional:ctrl_sim} -tclbatch {ctrl_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source ctrl_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module ctrl_sim.ctrl.rom.inst.native_mem_mapped_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Simulation started.
+instruction: 32'h00000000, memtoreg: 0, memwrite: 0, pcsrc: 0, alusrc: 0, regdst: 1, regwrite: 1, jump: 0, branch: 0.
+instruction: 32'h20020005, memtoreg: 0, memwrite: 0, pcsrc: 0, alusrc: 1, regdst: 0, regwrite: 1, jump: 0, branch: 0.
+instruction: 32'h2003000c, memtoreg: 0, memwrite: 0, pcsrc: 0, alusrc: 1, regdst: 0, regwrite: 1, jump: 0, branch: 0.
+instruction: 32'h2067fff7, memtoreg: 0, memwrite: 0, pcsrc: 0, alusrc: 1, regdst: 0, regwrite: 1, jump: 0, branch: 0.
+instruction: 32'h00e22025, memtoreg: 0, memwrite: 0, pcsrc: 0, alusrc: 0, regdst: 1, regwrite: 1, jump: 0, branch: 0.
+instruction: 32'h00642824, memtoreg: 0, memwrite: 0, pcsrc: 0, alusrc: 0, regdst: 1, regwrite: 1, jump: 0, branch: 0.
+instruction: 32'h00a42820, memtoreg: 0, memwrite: 0, pcsrc: 0, alusrc: 0, regdst: 1, regwrite: 1, jump: 0, branch: 0.
+instruction: 32'h10a7000a, memtoreg: 1, memwrite: 0, pcsrc: x, alusrc: 0, regdst: 1, regwrite: 0, jump: 0, branch: 1.
+instruction: 32'h0064202a, memtoreg: 0, memwrite: 0, pcsrc: 0, alusrc: 0, regdst: 1, regwrite: 1, jump: 0, branch: 0.
+instruction: 32'h10800001, memtoreg: 1, memwrite: 0, pcsrc: x, alusrc: 0, regdst: 1, regwrite: 0, jump: 0, branch: 1.
+instruction: 32'h20050000, memtoreg: 0, memwrite: 0, pcsrc: 0, alusrc: 1, regdst: 0, regwrite: 1, jump: 0, branch: 0.
+instruction: 32'h00e2202a, memtoreg: 0, memwrite: 0, pcsrc: 0, alusrc: 0, regdst: 1, regwrite: 1, jump: 0, branch: 0.
+instruction: 32'h00853820, memtoreg: 0, memwrite: 0, pcsrc: 0, alusrc: 0, regdst: 1, regwrite: 1, jump: 0, branch: 0.
+instruction: 32'h00e23822, memtoreg: 0, memwrite: 0, pcsrc: 0, alusrc: 0, regdst: 1, regwrite: 1, jump: 0, branch: 0.
+instruction: 32'hac670044, memtoreg: 1, memwrite: 1, pcsrc: 0, alusrc: 1, regdst: 0, regwrite: 0, jump: 0, branch: 0.
+instruction: 32'h8c020050, memtoreg: 1, memwrite: 0, pcsrc: 0, alusrc: 1, regdst: 0, regwrite: 1, jump: 0, branch: 0.
+instruction: 32'h08000011, memtoreg: 0, memwrite: 0, pcsrc: 0, alusrc: 0, regdst: 0, regwrite: 0, jump: 1, branch: 0.
+instruction: 32'h20020001, memtoreg: 0, memwrite: 0, pcsrc: 0, alusrc: 1, regdst: 0, regwrite: 1, jump: 0, branch: 0.
+instruction: 32'hac020054, memtoreg: 1, memwrite: 1, pcsrc: 0, alusrc: 1, regdst: 0, regwrite: 0, jump: 0, branch: 0.
+Simulation ended.
+$stop called at time : 390 ns : File "E:/lab/lab2/lab2.srcs/sim_1/new/ctrl_sim.v" Line 62
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ctrl_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 787.980 ; gain = 35.102
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 787.980 ; gain = 0.000
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+export_ip_user_files -of_objects  [get_files e:/lab/lab2/mipstest.coe] -no_script -reset -force -quiet
+remove_files  e:/lab/lab2/mipstest.coe
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/lab/lab2/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../inst_ram.coe'
+set_property -dict [list CONFIG.Coe_File {E:/lab/lab2/inst_ram.coe}] [get_ips inst_rom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/lab/lab2/inst_ram.coe' provided. It will be converted relative to IP Instance files '../../../../inst_ram.coe'
+generate_target all [get_files  E:/lab/lab2/lab2.srcs/sources_1/ip/inst_rom/inst_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'inst_rom'...
+catch { config_ip_cache -export [get_ips -all inst_rom] }
+export_ip_user_files -of_objects [get_files E:/lab/lab2/lab2.srcs/sources_1/ip/inst_rom/inst_rom.xci] -no_script -sync -force -quiet
+reset_run inst_rom_synth_1
+launch_runs -jobs 4 inst_rom_synth_1
+[Sun Jun 28 16:44:06 2020] Launched inst_rom_synth_1...
+Run output will be captured here: E:/lab/lab2/lab2.runs/inst_rom_synth_1/runme.log
+export_simulation -of_objects [get_files E:/lab/lab2/lab2.srcs/sources_1/ip/inst_rom/inst_rom.xci] -directory E:/lab/lab2/lab2.ip_user_files/sim_scripts -ip_user_files_dir E:/lab/lab2/lab2.ip_user_files -ipstatic_source_dir E:/lab/lab2/lab2.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/lab/lab2/lab2.cache/compile_simlib/modelsim} {questa=E:/lab/lab2/lab2.cache/compile_simlib/questa} {riviera=E:/lab/lab2/lab2.cache/compile_simlib/riviera} {activehdl=E:/lab/lab2/lab2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/lab/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/lab/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ctrl_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/lab/lab2/lab2.sim/sim_1/behav/xsim/inst_rom.mif'
+INFO: [SIM-utils-43] Exported 'E:/lab/lab2/lab2.sim/sim_1/behav/xsim/inst_ram.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/lab/lab2/lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ctrl_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab/lab2/lab2.srcs/sources_1/ip/inst_rom/sim/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab/lab2/lab2.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab/lab2/lab2.srcs/sources_1/new/alu_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab/lab2/lab2.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab/lab2/lab2.srcs/sources_1/new/main_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab/lab2/lab2.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/lab/lab2/lab2.srcs/sim_1/new/ctrl_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl_sim
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/lab/lab2/lab2.sim/sim_1/behav/xsim'
+"xelab -wto 5b8b06e4e327436ea082dc549439247a --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ctrl_sim_behav xil_defaultlib.ctrl_sim xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 5b8b06e4e327436ea082dc549439247a --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ctrl_sim_behav xil_defaultlib.ctrl_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.main_decoder
+Compiling module xil_defaultlib.alu_decoder
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.ctrl_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ctrl_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/lab/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ctrl_sim_behav -key {Behavioral:sim_1:Functional:ctrl_sim} -tclbatch {ctrl_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source ctrl_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module ctrl_sim.ctrl.rom.inst.native_mem_mapped_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Simulation started.
+instruction: 32'h00000000, memtoreg: 0, memwrite: 0, pcsrc: 0, alusrc: 0, regdst: 1, regwrite: 1, jump: 0, branch: 0.
+instruction: 32'h20020005, memtoreg: 0, memwrite: 0, pcsrc: 0, alusrc: 1, regdst: 0, regwrite: 1, jump: 0, branch: 0.
+instruction: 32'h00a42820, memtoreg: 0, memwrite: 0, pcsrc: 0, alusrc: 0, regdst: 1, regwrite: 1, jump: 0, branch: 0.
+instruction: 32'h8c020050, memtoreg: 1, memwrite: 0, pcsrc: 0, alusrc: 1, regdst: 0, regwrite: 1, jump: 0, branch: 0.
+instruction: 32'hac020054, memtoreg: 1, memwrite: 1, pcsrc: 0, alusrc: 1, regdst: 0, regwrite: 0, jump: 0, branch: 0.
+instruction: 32'h10a7000c, memtoreg: 1, memwrite: 0, pcsrc: x, alusrc: 0, regdst: 1, regwrite: 0, jump: 0, branch: 1.
+instruction: 32'h08000013, memtoreg: 0, memwrite: 0, pcsrc: 0, alusrc: 0, regdst: 0, regwrite: 0, jump: 1, branch: 0.
+Simulation ended.
+$stop called at time : 150 ns : File "E:/lab/lab2/lab2.srcs/sim_1/new/ctrl_sim.v" Line 62
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ctrl_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 842.602 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 28 16:45:43 2020...

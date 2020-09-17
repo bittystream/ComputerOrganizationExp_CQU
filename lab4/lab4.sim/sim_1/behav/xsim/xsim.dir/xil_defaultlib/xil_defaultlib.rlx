@@ -1,0 +1,27 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+E:/lab/lab4/lab4.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+E:/lab/lab4/lab4.srcs/sim_1/imports/sim/testbench.v,1592316290,verilog,,,,testbench,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/imports/new/ALU.v,1592411056,verilog,,E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/imports/new/PC.v,,ALU,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/imports/new/PC.v,1591863650,verilog,,E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/imports/rtl/adder.v,,PC,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/imports/new/alu_decoder.v,1592586219,verilog,,E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/imports/new/controller.v,,alu_decoder,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/imports/new/controller.v,1592633198,verilog,,E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/new/datapath.v,,controller,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/imports/new/main_decoder.v,1592586318,verilog,,E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/imports/rtl/mips.v,,main_decoder,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/imports/rtl/adder.v,1590918068,verilog,,E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/imports/new/alu_decoder.v,,adder,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/imports/rtl/mips.v,1592633798,verilog,,E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/new/mux2.v,,mips,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/imports/rtl/regfile.v,1592408309,verilog,,E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/new/signext.v,,regfile,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/imports/rtl/top.v,1592567296,verilog,,E:/lab/lab4/lab4.srcs/sim_1/imports/sim/testbench.v,,top,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/new/datapath.v,1592633318,verilog,,E:/lab/lab4/lab4.srcs/sources_1/new/eqcmp.v,,datapath,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/new/mux2.v,1590925044,verilog,,E:/lab/lab4/lab4.srcs/sources_1/new/mux3.v,,mux2,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/new/signext.v,1591013900,verilog,,E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/new/sl2.v,,signext,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/new/sl2.v,1590846732,verilog,,E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/imports/rtl/top.v,,sl2,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/ip/data_mem/sim/data_mem.v,1591860033,verilog,,E:/lab/lab4/lab4.srcs/sources_1/ip/inst_mem/sim/inst_mem.v,,data_mem,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/ip/inst_mem/sim/inst_mem.v,1592318100,verilog,,E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/imports/new/ALU.v,,inst_mem,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/new/eqcmp.v,1591874153,verilog,,E:/lab/lab4/lab4.srcs/sources_1/new/flopenrc.v,,eqcmp,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/new/flopenrc.v,1591841660,verilog,,E:/lab/lab4/lab4.srcs/sources_1/new/flopr.v,,flopenrc,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/new/flopr.v,1591850453,verilog,,E:/lab/lab4/lab4.srcs/sources_1/new/floprc.v,,flopr,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/new/floprc.v,1591841739,verilog,,E:/lab/lab4/lab4.srcs/sources_1/new/hazard.v,,floprc,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/new/hazard.v,1592631991,verilog,,E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/imports/new/main_decoder.v,,hazard,,,,,,,,
+E:/lab/lab4/lab4.srcs/sources_1/new/mux3.v,1591800022,verilog,,E:/lab/lab4/lab4.srcs/sources_1/imports/sources_1/imports/rtl/regfile.v,,mux3,,,,,,,,
